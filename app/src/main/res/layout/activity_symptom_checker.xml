@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.symptom_checker">
+
+    <!-- Medical History Section -->
+    <TextView
+        android:id="@+id/labelMedicalHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical History"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputExistingSymptoms"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/labelMedicalHistory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editExistingSymptoms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Existing Medical Symptoms"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputChronicDisease"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputExistingSymptoms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editChronicDisease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Chronic Disease"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputAllergies"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputChronicDisease"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editAllergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Allergies"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputPreviousSurgeries"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputAllergies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPreviousSurgeries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Previous Surgeries"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputCurrentMedication"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputPreviousSurgeries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editCurrentMedication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Medication"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Social History Section -->
+    <TextView
+        android:id="@+id/labelSocialHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Social History"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/inputCurrentMedication"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputSmokingStatus"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/labelSocialHistory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editSmokingStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Smoking Status"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputAlcoholIntake"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputSmokingStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editAlcoholIntake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alcohol Intake"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputDrugUsage"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputAlcoholIntake"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editDrugUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Occasional Drug Usage"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Add Submit Button or any other controls as needed -->
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:text="PREDICT DISEASE"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/theme"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDrugUsage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
