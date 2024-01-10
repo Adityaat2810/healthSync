@@ -5,5 +5,9 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.HealthSync" parent="Base.Theme.HealthSync" />
+    <style name="Theme.HealthSync" parent="Base.Theme.HealthSync" >
+        <item name="colorPrimary">@color/theme</item>
+
+    </style>
+
 </resources>
