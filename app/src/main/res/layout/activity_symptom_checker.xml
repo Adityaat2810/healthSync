@@ -185,7 +185,8 @@
 
     <!-- Add Submit Button or any other controls as needed -->
 
-    <com.google.android.material.button.MaterialButton
+    <com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/PredictDisease"
         android:layout_width="match_parent"
         android:text="PREDICT DISEASE"
         android:layout_height="wrap_content"
@@ -193,9 +194,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginVertical="8dp"
         android:layout_marginStart="16dp"
+        android:gravity="center"
         android:backgroundTint="@color/theme"
         android:layout_marginEnd="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputDrugUsage" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
